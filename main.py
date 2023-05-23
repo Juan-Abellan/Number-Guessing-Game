@@ -1,6 +1,10 @@
 # TODO: IMPORTS
 from art import logo
 from random import randint
+import os
+
+def clear():
+  return os.system('clear')
 
 
 def guess_number():
@@ -38,7 +42,6 @@ def guess_number():
             still = False
             print(f"You did not guess the number! it was {secret_number}!!!!")
 
-
 while input("Do you want to play? 'y' or 'n'") == "y":
+    clear()
     guess_number()
-
